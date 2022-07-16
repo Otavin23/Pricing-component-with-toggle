@@ -8,7 +8,15 @@ const Home = () => {
         <S.mainHeader>
           <h1>Our Pricing</h1>
         </S.mainHeader>
-        <S.navMain>A</S.navMain>
+
+        <S.navMain>
+          <S.labelTheme>
+            <p>Annually</p>
+            <input type="checkbox" />
+            <span className="check"></span>
+            <p>Monthly</p>
+          </S.labelTheme>
+        </S.navMain>
       </S.mainContainer>
     </S.mainB>
   );
