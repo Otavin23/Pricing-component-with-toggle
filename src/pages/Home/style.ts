@@ -92,10 +92,7 @@ export const sectionCards = styled.div`
   box-shadow: 0 0 1rem #d3d3d3;
   display: flex;
   justify-content: center;
-  border-bottom-left-radius: 0.5rem;
-  border-top-left-radius: 0.5rem;
 `;
-
 export const cardsContainer = styled.div`
   width: 90%;
   height: 100%;
