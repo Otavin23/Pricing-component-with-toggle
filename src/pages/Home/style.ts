@@ -88,10 +88,12 @@ export const sectionCard = styled.section`
 `;
 export const sectionCards = styled.div`
   width: 280px;
-  height: 450px;
-  box-shadow: 0 0 1em #ececec;
+  height: 400px;
+  box-shadow: 0 0 1rem #d3d3d3;
   display: flex;
   justify-content: center;
+  border-bottom-left-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
 `;
 
 export const cardsContainer = styled.div`
@@ -117,9 +119,33 @@ export const cardsContainer = styled.div`
       font-size: 3.5rem;
     }
   }
+  button {
+    border: none;
+    width: 100%;
+    height: 2.5rem;
+  }
 `;
 export const navList = styled.nav`
+  width: 100%;
+  margin-top: 2rem;
+  ul {
+    list-style: none;
+  }
   li {
-    color: hsl(240, 78%, 98%);
+    padding: 1.5rem;
+
+    border-top: 1px solid hsl(234, 14%, 74%);
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 330px;
+    color: hsl(232, 13%, 33%);
+    height: 2rem;
+  }
+  #end {
+    border-bottom: 1px solid hsl(234, 14%, 74%);
+    padding: 1.5rem;
   }
 `;

@@ -26,14 +26,15 @@ const Home = () => {
                 <p id="minus">$</p>
                 <p>199.99</p>
               </span>
+
               <S.navList>
                 <ul>
                   <li>500 GB Storage</li>
                   <li>2 Users Allowed</li>
-                  <li>Send up to 3 GB</li>
+                  <li id="end">Send up to 3 GB</li>
                 </ul>
-                <button>LEARN MORE</button>
               </S.navList>
+              <button>LEARN MORE</button>
             </S.cardsContainer>
           </S.sectionCards>
           <S.sectionCards>asda</S.sectionCards>
