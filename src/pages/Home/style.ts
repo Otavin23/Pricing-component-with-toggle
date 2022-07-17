@@ -1,16 +1,13 @@
 import styled from "styled-components";
 
 export const mainB = styled.main`
-  width: 850px;
   height: 100vh;
   display: flex;
   justify-content: center;
 `;
 export const mainContainer = styled.div`
-  width: 95%;
-  height: 100%; da idain idan dna
-   dai dniand aindi a
-   dai ndi nia ndiand 
+  width: 100%;
+  height: 100%;
 `;
 export const mainHeader = styled.header`
   width: 100%;
@@ -21,6 +18,7 @@ export const mainHeader = styled.header`
   justify-content: center;
 `;
 export const navMain = styled.nav``;
+
 export const labelTheme = styled.label`
   display: flex;
   align-items: center;
@@ -78,5 +76,50 @@ export const labelTheme = styled.label`
       transition: 0.1s;
       transform: translateX(50px);
     }
+  }
+`;
+
+export const sectionCard = styled.section`
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+`;
+export const sectionCards = styled.div`
+  width: 280px;
+  height: 450px;
+  box-shadow: 0 0 1em #ececec;
+  display: flex;
+  justify-content: center;
+`;
+
+export const cardsContainer = styled.div`
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  h2 {
+    color: hsl(233, 13%, 49%);
+    font-size: 16px;
+    margin-top: 2rem;
+  }
+  span {
+    color: hsl(232, 13%, 33%);
+    display: flex;
+    display: flex;
+    align-items: center;
+    #minus {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 3.5rem;
+    }
+  }
+`;
+export const navList = styled.nav`
+  li {
+    color: hsl(240, 78%, 98%);
   }
 `;

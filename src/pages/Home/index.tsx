@@ -17,6 +17,28 @@ const Home = () => {
             <p>Monthly</p>
           </S.labelTheme>
         </S.navMain>
+
+        <S.sectionCard>
+          <S.sectionCards>
+            <S.cardsContainer>
+              <h2>Basic</h2>
+              <span>
+                <p id="minus">$</p>
+                <p>199.99</p>
+              </span>
+              <S.navList>
+                <ul>
+                  <li>500 GB Storage</li>
+                  <li>2 Users Allowed</li>
+                  <li>Send up to 3 GB</li>
+                </ul>
+                <button>LEARN MORE</button>
+              </S.navList>
+            </S.cardsContainer>
+          </S.sectionCards>
+          <S.sectionCards>asda</S.sectionCards>
+          <S.sectionCards>asda</S.sectionCards>
+        </S.sectionCard>
       </S.mainContainer>
     </S.mainB>
   );
