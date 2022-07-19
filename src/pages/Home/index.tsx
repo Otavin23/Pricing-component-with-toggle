@@ -23,7 +23,7 @@ const Home = () => {
             <S.cardsContainer>
               <h2>Basic</h2>
               <span>
-                <p id="minus">$</p>
+                <p className="minus">$</p>
                 <p>199.99</p>
               </span>
 
@@ -34,11 +34,48 @@ const Home = () => {
                   <li id="end">Send up to 3 GB</li>
                 </ul>
               </S.navList>
+
               <button>LEARN MORE</button>
             </S.cardsContainer>
           </S.sectionCards>
-          <S.sectionCards>asda</S.sectionCards>
-          <S.sectionCards>asda</S.sectionCards>
+
+          <S.cardProfessional>
+            <S.cardProfessionalContainer>
+              <h2>Professional</h2>
+              <span>
+                <p className="minus">$</p>
+                <p>249.99</p>
+              </span>
+              <S.NavListProfessional>
+                <ul>
+                  <li>2 TB Storage</li>
+                  <li>10 Users Allowed</li>
+                  <li id="end">Send up to 20 GB</li>
+                </ul>
+              </S.NavListProfessional>
+              <button>learn more</button>
+            </S.cardProfessionalContainer>
+          </S.cardProfessional>
+
+          <S.sectionCards>
+            <S.cardsContainer>
+              <h2>Master</h2>
+              <span>
+                <p className="minus">$</p>
+                <p>399.99</p>
+              </span>
+
+              <S.navList>
+                <ul>
+                  <li>2 TB Storage</li>
+                  <li>10 Users Allowed</li>
+                  <li id="end">Send up to 20 GB</li>
+                </ul>
+              </S.navList>
+
+              <button>LEARN MORE</button>
+            </S.cardsContainer>
+          </S.sectionCards>
         </S.sectionCard>
       </S.mainContainer>
     </S.mainB>

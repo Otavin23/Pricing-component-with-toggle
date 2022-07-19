@@ -88,7 +88,7 @@ export const sectionCard = styled.section`
 `;
 export const sectionCards = styled.div`
   width: 280px;
-  height: 400px;
+  height: 380px;
   box-shadow: 0 0 1rem #d3d3d3;
   display: flex;
   justify-content: center;
@@ -107,9 +107,8 @@ export const cardsContainer = styled.div`
   span {
     color: hsl(232, 13%, 33%);
     display: flex;
-    display: flex;
     align-items: center;
-    #minus {
+    .minus {
       font-size: 2rem;
     }
     p {
@@ -118,8 +117,19 @@ export const cardsContainer = styled.div`
   }
   button {
     border: none;
+    cursor: pointer;
     width: 100%;
-    height: 2.5rem;
+    height: 2.3rem;
+    margin-top: 1.5rem;
+    background-image: linear-gradient(
+      to right,
+      hsl(236, 72%, 79%),
+      hsl(237, 63%, 64%)
+    );
+    color: white;
+    letter-spacing: 2px;
+    font-size: 0.7rem;
+    border-radius: 0.2rem;
   }
 `;
 export const navList = styled.nav`
@@ -129,8 +139,7 @@ export const navList = styled.nav`
     list-style: none;
   }
   li {
-    padding: 1.5rem;
-
+    padding: 1.3rem;
     border-top: 1px solid hsl(234, 14%, 74%);
     opacity: 0.7;
     display: flex;
@@ -140,6 +149,82 @@ export const navList = styled.nav`
     max-width: 330px;
     color: hsl(232, 13%, 33%);
     height: 2rem;
+    font-size: 0.9rem;
+  }
+  #end {
+    border-bottom: 1px solid hsl(234, 14%, 74%);
+    padding: 1.5rem;
+  }
+`;
+export const cardProfessional = styled.div`
+  width: 310px;
+  height: 430px;
+  z-index: 2;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+`;
+export const cardProfessionalContainer = styled.div`
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  h2 {
+    color: white;
+    font-size: 16px;
+    margin-top: 2rem;
+  }
+  span {
+    color: white;
+    display: flex;
+    align-items: center;
+    opacity: 0.9;
+    .minus {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 3.5rem;
+    }
+  }
+  button {
+    border: none;
+    width: 100%;
+    height: 2.3rem;
+    margin-top: 1.5rem;
+    background: white;
+    color: hsl(237, 63%, 64%);
+    letter-spacing: 2px;
+    font-size: 0.7rem;
+    border-radius: 0.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+`;
+export const NavListProfessional = styled.nav`
+  width: 100%;
+  margin-top: 2rem;
+  ul {
+    list-style: none;
+  }
+  li {
+    padding: 1.7rem;
+    border-top: 1px solid hsl(234, 14%, 74%);
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 330px;
+    color: white;
+    height: 2rem;
+    font-size: 0.9rem;
   }
   #end {
     border-bottom: 1px solid hsl(234, 14%, 74%);
