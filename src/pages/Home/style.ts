@@ -172,7 +172,7 @@ export const cardProfessional = styled.div`
 `;
 export const cardProfessionalContainer = styled.div`
   width: 90%;
-  height: 100%;
+  height: 90%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -209,22 +209,22 @@ export const cardProfessionalContainer = styled.div`
 `;
 export const NavListProfessional = styled.nav`
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 2.2rem;
   ul {
     list-style: none;
   }
   li {
-    padding: 1.7rem;
+    padding: 1.3rem;
     border-top: 1px solid hsl(234, 14%, 74%);
-    opacity: 0.9;
+    opacity: 0.7;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     max-width: 330px;
     color: white;
-    height: 2rem;
     font-size: 0.9rem;
+    height: 2.3rem;
   }
   #end {
     border-bottom: 1px solid hsl(234, 14%, 74%);

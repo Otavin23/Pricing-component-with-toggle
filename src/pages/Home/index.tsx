@@ -1,18 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import * as S from "./style";
 
 const Home = () => {
+  const [button, setButton] = useState<boolean>(false);
+
+  function handleupdate() {
+    setButton(!button);
+  }
+  console.log(button);
+
   return (
     <S.mainB>
       <S.mainContainer>
         <S.mainHeader>
           <h1>Our Pricing</h1>
         </S.mainHeader>
-
         <S.navMain>
           <S.labelTheme>
             <p>Annually</p>
-            <input type="checkbox" />
+            <input type="checkbox" onClick={handleupdate} />
             <span className="check"></span>
             <p>Monthly</p>
           </S.labelTheme>
