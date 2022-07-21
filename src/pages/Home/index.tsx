@@ -7,7 +7,7 @@ const Home = () => {
   function handleupdate() {
     setButton(!button);
   }
-  console.log(button);
+  console.log(button dua udbaudb au da);
 
   return (
     <S.mainB>
