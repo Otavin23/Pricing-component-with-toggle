@@ -85,6 +85,7 @@ export const sectionCard = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 `;
 export const sectionCards = styled.div`
   width: 280px;
@@ -92,6 +93,7 @@ export const sectionCards = styled.div`
   box-shadow: 0 0 1rem #d3d3d3;
   display: flex;
   justify-content: center;
+  margin: 1.5rem 0px 1.5rem 0rem;
 `;
 export const cardsContainer = styled.div`
   width: 90%;
@@ -130,6 +132,12 @@ export const cardsContainer = styled.div`
     letter-spacing: 2px;
     font-size: 0.7rem;
     border-radius: 0.2rem;
+    &:hover {
+      background: transparent;
+      color: hsl(237, 63%, 64%);
+      border: 1px solid hsl(237, 63%, 64%);
+      border-radius: 0.3rem;
+    }
   }
 `;
 export const navList = styled.nav`
@@ -157,7 +165,7 @@ export const navList = styled.nav`
   }
 `;
 export const cardProfessional = styled.div`
-  width: 310px;
+  width: 280px;
   height: 430px;
   z-index: 2;
   border-radius: 0.5rem;
@@ -205,6 +213,12 @@ export const cardProfessionalContainer = styled.div`
     border-radius: 0.2rem;
     text-transform: uppercase;
     cursor: pointer;
+    &:hover {
+      background: transparent;
+      color: white;
+      border: 1px solid white;
+      border-radius: 0.3rem;
+    }
   }
 `;
 export const NavListProfessional = styled.nav`

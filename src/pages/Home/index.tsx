@@ -1,13 +1,35 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import * as S from "./style";
+import { plan } from "../../@types/interfaces";
 
 const Home = () => {
   const [button, setButton] = useState<boolean>(false);
+  const [prices, setPrices] = useState<plan>();
 
   function handleupdate() {
+    if (button === false) {
+      setPrices({
+        prices: {
+          basic: 19.99,
+          professional: 24.99,
+          master: 39.99,
+        },
+      });
+    }
+    if (button === true) {
+      setPrices({
+        prices: {
+          basic: 199.99,
+          professional: 249.99,
+          master: 399.99,
+        },
+      });
+    }
     setButton(!button);
+    console.log(button);
   }
-  console.log(button dua udbaudb au da);
+
+  console.log(prices?.prices.basic.toFixed(2));
 
   return (
     <S.mainB>
@@ -15,6 +37,7 @@ const Home = () => {
         <S.mainHeader>
           <h1>Our Pricing</h1>
         </S.mainHeader>
+
         <S.navMain>
           <S.labelTheme>
             <p>Annually</p>
@@ -30,7 +53,11 @@ const Home = () => {
               <h2>Basic</h2>
               <span>
                 <p className="minus">$</p>
-                <p>199.99</p>
+                <p>
+                  {prices?.prices.master === undefined
+                    ? 199.99
+                    : prices?.prices.basic}
+                </p>
               </span>
 
               <S.navList>
@@ -50,7 +77,11 @@ const Home = () => {
               <h2>Professional</h2>
               <span>
                 <p className="minus">$</p>
-                <p>249.99</p>
+                <p>
+                  {prices?.prices.master === undefined
+                    ? 249.99
+                    : prices?.prices.professional}
+                </p>
               </span>
               <S.NavListProfessional>
                 <ul>
@@ -68,7 +99,11 @@ const Home = () => {
               <h2>Master</h2>
               <span>
                 <p className="minus">$</p>
-                <p>399.99</p>
+                <p>
+                  {prices?.prices.master === undefined
+                    ? 399.99
+                    : prices?.prices.master}
+                </p>
               </span>
 
               <S.navList>

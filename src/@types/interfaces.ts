@@ -1,3 +1,7 @@
 export interface plan {
-  numero: number;
+  prices: {
+    basic: number;
+    professional: number;
+    master: number;
+  };
 }
