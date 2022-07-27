@@ -26,7 +26,6 @@ const Home = () => {
       });
     }
     setButton(!button);
-    console.log(button);
   }
 
   console.log(prices?.prices.basic.toFixed(2));
