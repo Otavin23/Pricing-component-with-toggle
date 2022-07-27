@@ -4,7 +4,13 @@ import { plan } from "../../@types/interfaces";
 
 const Home = () => {
   const [button, setButton] = useState<boolean>(false);
-  const [prices, setPrices] = useState<plan>();
+  const [prices, setPrices] = useState<plan>({
+    prices: {
+      basic: 19.99,
+      professional: 24.99,
+      master: 39.99,
+    },
+  });
 
   function handleupdate() {
     if (button === false) {
@@ -27,8 +33,6 @@ const Home = () => {
     }
     setButton(!button);
   }
-
-  console.log(prices?.prices.basic.toFixed(2));
 
   return (
     <S.mainB>
